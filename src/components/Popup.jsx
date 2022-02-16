@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./popup.scss";
+import "./Popup.scss";
 
 function Popup(props) {
   const popup = useRef(null);

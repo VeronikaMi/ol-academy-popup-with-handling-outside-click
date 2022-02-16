@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "./shop.scss";
-import Popup from "./popup";
+import "./Shop.scss";
+import Popup from "./Popup";
 
 function Shop() {
   const [showPopup, setShowPopup] = useState(false);
 
-  const closePopup = (e) => {
-    setShowPopup(e);
+  const closePopup = (show) => {
+    setShowPopup(show);
   };
 
   return (
@@ -37,7 +37,7 @@ function Shop() {
           </div>
         </div>
       </div>
-      {showPopup && <Popup showPopUp={(e) => closePopup(e)} />}
+      {showPopup && <Popup showPopUp={(show) => closePopup(show)} />}
     </div>
   );
 }
